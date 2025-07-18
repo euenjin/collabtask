@@ -9,8 +9,8 @@ CollabTask is a real-time collaboration web app focused on improving teamwork an
 - Real-time Communication: WebSocket  
 
 ## Timeline
-Week 1: Setup and requirements gathering  
-Week 2: Authentication and task management development  
+Week 1: Setup and requirements gathering    
+Week 2: Authentication and task management development   
 Week 3: Chat and access control implementation, smart scheduler basic  
 Week 4: Testing, documentation, deployment, smart scheduler optimization  
 
