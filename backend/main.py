@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from database import engine
-from models import ScheduleItem   
-from models import Base
+from backend.schemas.schedule import ScheduleItem   
+from backend.models.schedule import Schedule, Base
 
 app = FastAPI()
 
