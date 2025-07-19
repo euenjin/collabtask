@@ -2,7 +2,7 @@ from sqlalchemy import create_engine               # Connect engine to the datab
 from sqlalchemy.ext.declarative import declarative_base  # base class factory for ORM models
 from sqlalchemy.orm import sessionmaker             # Connect ORM models to the database
 from dotenv import load_dotenv                       # Load settings from .env file
-import os                                            # Import OS module to access environment variables
+import os                                           
 
 load_dotenv()                                        # Load variables from .env file into environment
 
@@ -17,3 +17,10 @@ SessionLocal = sessionmaker(                         # Create a configured "Sess
 )
 
 Base = declarative_base()                            # Create a base class for all ORM models to inherit from
+
+def get_db():
+    db=SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
